@@ -25,7 +25,7 @@ function ArtistMessagesScreen() {
 
     return (
         <div className="bg-image"
-            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_6647.jpg)` }}>
+            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_1111.png)` }}>
             <div className="min-h-screen bg-black/50">
                 <div className="max-w-7xl mx-auto py-3 px-4 sm:py-6 sm:px-6 lg:px-8 flex justify-between items-center">
                     <button
@@ -36,22 +36,14 @@ function ArtistMessagesScreen() {
                 <main className="max-w-md mx-auto px-4 pt-20">
                     <div className="space-y-4">
                         {messages.map((msg, index) => (
-                            <div key={index} className="bg-white/80 backdrop-blur-sm rounded-lg p-4">
-                                <div className="flex justify-between items-center mb-2">
-                                    <h3 className="font-semibold">{msg.studio}</h3>
-                                    {msg.unread && (
-                                        <div className="flex space-x-1">
-                                            <div className="w-2 h-2 bg-black rounded-full"></div>
-                                            <div className="w-2 h-2 bg-black rounded-full"></div>
-                                        </div>
-                                    )}
+                            <div key={index} className="Suitcase-Studios">
+                                <h3 className="Studio-name">{msg.studio}</h3>
+                                <div className="LineBreak"></div>
+                                <div className="TEXTBOX">
+                                    <p className="writing-in-textbox">{msg.message}</p>
                                 </div>
-                                <p className="text-gray-600 text-sm">{msg.message}</p>
                             </div>
                         ))}
-                        <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 text-center text-sm text-gray-600">
-                            15 Messages
-                        </div>
                     </div>
                 </main>
             </div>

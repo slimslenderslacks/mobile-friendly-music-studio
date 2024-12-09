@@ -13,7 +13,7 @@ function ArtistWorkScreen() {
 
     return (
         <div className="bg-image"
-            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_6647.jpg)` }}>
+            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_8801.jpg)` }}>
             <div className="min-h-screen bg-black/50">
                 <div className="max-w-7xl mx-auto py-3 px-4 sm:py-6 sm:px-6 lg:px-8 flex justify-between items-center">
                     <button
