@@ -19,10 +19,21 @@
 }
 
 .btn-back {
-  @apply px-4 py-2;
-  @apply bg-gray-800/80 text-white rounded-lg;
-  @apply hover:bg-gray-900 transition-all duration-200;
-  @apply font-['Pixelify_Sans'] text-sm sm:text-base;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 16px;
+  top: 12px;
+  background-image: url('./assets/IMG_8209.jpg');
+  /* Add this line */
+  background-size: cover;
+  /* Add this line */
+  background-position: center;
+  /* Add this line */
+  background-repeat: no-repeat;
+  /* Add this line */
+  cursor: pointer;
+  /* Add this line */
 }
 
 .btn-small {
