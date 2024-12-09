@@ -29,7 +29,9 @@
 }
 
 .search-container {
-    @apply flex flex-col items-center justify-center min-h-[calc(100vh-100px)] space-y-2;
+    @apply text-center text-sm text-white/80 font-light;
+
+    position: absolute;
 }
 
 .search-box {
@@ -100,56 +102,9 @@
     border-radius: 10px;
 }
 
-.payment-box {
-    width: 312px;
-    height: 44px;
-    left: 40px;
-    top: 93px;
-
-    /* Body Base */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    /* or 22px */
-    text-align: center;
-
-    color: #1E1E1E;
-}
-
-.payment-rectangle {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 142px;
-    height: 29px;
-    left: 160px;
-    top: 19px;
-
-    background: #A9A9A9;
-    border: 1px solid #000000;
-    border-radius: 10px;
-}
 
 
-.payment-label {
-    width: 221px;
-    height: 22px;
-    left: 85px;
-    top: 22px;
-    align: center;
-    /* Body Base */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    /* or 22px */
-    text-align: center;
 
-    color: #1E1E1E;
-}
 
 .Suitcase-Studios {
     box-sizing: border-box;
@@ -161,6 +116,7 @@
     background: #A9A9A9;
     border: 1px solid #000000;
     border-radius: 10px;
+    
 }
 
 .Studio-name {
@@ -176,18 +132,25 @@
 }
 
 .LineBreak {
-    width: 300px;
-    height: 0px;
-    left: 5px;
-    top: 106px;
+    /* Rule */
 
-    border: 1px solid #FFFCFC;
+width: 253px;
+height: 1px;
+
+position: absolute;
+
+background: #D9D9D9;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
 }
 
 /* Description */
 
 .TEXTBOX {
-    width: 221px;
     height: 22px;
     left: 85px;
     top: 75px;
@@ -198,7 +161,7 @@
     font-size: 16px;
     line-height: 140%;
     /* or 22px */
-    text-align: center;
+    text-align: right;
 
     color: #1E1E1E;
 }
@@ -217,6 +180,24 @@
     line-height: 140%;
     /* or 20px */
     text-align: right;
+
+    color: #757575;
+}
+
+.sending-in-textbox {
+    width: 197px;
+    height: 62px;
+    left: 42px;
+    top: 115px;
+
+    /* Body Small */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+    text-align: left;
 
     color: #757575;
 }

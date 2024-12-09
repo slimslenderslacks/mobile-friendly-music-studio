@@ -13,9 +13,6 @@ function ArtistPaymentScreen() {
                         onClick={() => navigate('/artist')}
                         className="btn-back">
                     </button>
-                    <div className="payment-rectangle">
-                        <label classname="payment-label">Payment Method</label>
-                    </div>
                 </div>
                 <main className="flex flex-col items-center justify-center h-[calc(100vh-100px)] space-y-6">
                     <h2 className="payment-box">

@@ -9,17 +9,17 @@ function ArtistMessagesScreen() {
         {
             studio: "Suitcase Studios",
             message: "Hey, do you guys have availability for Monday around 5pm?",
-            unread: true
+            send: true
         },
         {
             studio: "CROSSFIRE STUDIOS",
             message: "Yo, just wanted to give you a heads up that we will be closed this weekend!",
-            unread: false
+            send: false
         },
         {
             studio: "SOUND LAB STUDIO 15",
             message: "Hey man, your song that you recorded with us last week is all done! Check your work.",
-            unread: false
+            send: false
         }
     ];
 
@@ -38,9 +38,12 @@ function ArtistMessagesScreen() {
                         {messages.map((msg, index) => (
                             <div key={index} className="Suitcase-Studios">
                                 <h3 className="Studio-name">{msg.studio}</h3>
-                                <div className="LineBreak"></div>
+                        
                                 <div className="TEXTBOX">
-                                    <p className="writing-in-textbox">{msg.message}</p>
+
+                                <p className={msg.send ? "sending-in-textbox" : "writing-in-textbox"}>
+                                        {msg.message}
+                                    </p>
                                 </div>
                             </div>
                         ))}
