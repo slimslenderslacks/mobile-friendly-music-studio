@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom';
+import '../styles/global.css';
+import '../styles/landing.css';
 
 function LandingScreen() {
     const navigate = useNavigate();
@@ -9,12 +11,8 @@ function LandingScreen() {
             style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_4275.jpg)` }}
         >
             <div className="absolute inset-0 flex items-center justify-center">
-                <h2 className="text-4xl sm:text-6xl md:text-7xl text-white font-bold 
-                     tracking-wider text-center px-4
-                     drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]
-                     [text-shadow:_2px_2px_10px_rgb(0_0_0_/_90%)]
-                     font-['Pixelify_Sans']">
-                    What is your dream?
+                <h2 className="landing-title">
+                    What is Your Dream?
                 </h2>
             </div>
 

@@ -24,16 +24,9 @@
   height: 48px;
   left: 16px;
   top: 12px;
-  background-image: url('./assets/IMG_8209.jpg');
+  background-image: url('./assets/IMG_7121.png');
   /* Add this line */
   background-size: cover;
-  /* Add this line */
-  background-position: center;
-  /* Add this line */
-  background-repeat: no-repeat;
-  /* Add this line */
-  cursor: pointer;
-  /* Add this line */
 }
 
 .btn-small {

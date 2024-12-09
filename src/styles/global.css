@@ -1,0 +1,14 @@
+.bg-image {
+    @apply min-h-screen bg-cover bg-center bg-no-repeat relative;
+    opacity: 0.73;
+}
+
+.btn-back {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 16px;
+    top: 12px;
+    background-image: url('../assets/IMG_7121.png');
+    background-size: cover;
+}

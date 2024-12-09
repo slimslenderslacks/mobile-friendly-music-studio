@@ -1,0 +1,16 @@
+.landing-title {
+    position: absolute;
+    width: 306px;
+    height: 460px;
+    left: 19px;
+    top: 14px;
+
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 115px;
+
+    color: #FFFCFC;
+
+}

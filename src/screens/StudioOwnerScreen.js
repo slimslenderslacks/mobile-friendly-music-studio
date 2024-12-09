@@ -1,10 +1,11 @@
 import { useNavigate } from 'react-router-dom';
+import '../styles/global.css';
 
 function StudioOwnerScreen() {
     const navigate = useNavigate();
 
     return (
-        <div className="min-h-screen bg-cover bg-center bg-no-repeat relative"
+        <div className="bg-image"
             style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_9909.jpg)` }}>
             <div className="min-h-screen bg-black/50">
                 <div className="max-w-7xl mx-auto py-3 px-4 sm:py-6 sm:px-6 lg:px-8 flex justify-between items-center">
