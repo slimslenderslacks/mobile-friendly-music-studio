@@ -15,7 +15,21 @@ function ArtistStudiosScreen() {
                         className="btn-back">
                     </button>
                 </div>
-                <main className="flex items-center justify-center h-[calc(100vh-100px)]">
+                <main className="max-w-md mx-auto px-4 pt-20">
+                    <div className="search-container">
+                        <div className="search-box">
+                            <span className="search-icon"></span>
+                            <input
+                                type="text"
+                                placeholder="Find My Studio"
+                                className="search-input"
+                            />
+                        </div>
+                        <p className="search-disclaimer">
+                            Clicking this uses external sites<br />
+                            for location services
+                        </p>
+                    </div>
                 </main>
             </div>
         </div>
