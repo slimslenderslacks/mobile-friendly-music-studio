@@ -1,35 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function ArtistPaymentScreen() {
+    const navigate = useNavigate();
     return (
-        <div className="artist-payment-screen">
-            <h1>Payments & Earnings</h1>
-
-            {/* Payment Summary Section */}
-            <div className="payment-summary">
-                <h2>Summary</h2>
-                <div className="balance-card">
-                    <h3>Current Balance</h3>
-                    <p className="balance-amount">$0.00</p>
+        <div
+            className="bg-image"
+            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_1112.png)` }}
+        >
+            <div className="min-h-screen bg-black/50">
+                <div className="max-w-7xl mx-auto py-3 px-4 sm:py-6 sm:px-6 lg:px-8 flex justify-between items-center">
+                    <button
+                        onClick={() => navigate('/artist')}
+                        className="btn-back">
+                    </button>
                 </div>
-            </div>
-
-            {/* Transaction History Section */}
-            <div className="transaction-history">
-                <h2>Transaction History</h2>
-                <div className="transactions-list">
-                    {/* Add transaction items here */}
-                    <p>Your transaction history will appear here</p>
-                </div>
-            </div>
-
-            {/* Payment Methods Section */}
-            <div className="payment-methods">
-                <h2>Payment Methods</h2>
-                <div className="payment-methods-list">
-                    {/* Add payment methods here */}
-                    <p>Your payment methods will appear here</p>
-                </div>
+                <main className="flex items-center justify-center h-[calc(100vh-100px)]">
+                </main>
             </div>
         </div>
     );

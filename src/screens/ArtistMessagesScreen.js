@@ -1,40 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function ArtistMessagesScreen() {
+    const navigate = useNavigate();
     return (
-        <div className="artist-messages-screen">
-            <h1>Messages</h1>
-
-            <div className="messages-container">
-                {/* Conversations List */}
-                <div className="conversations-list">
-                    <h2>Conversations</h2>
-                    <div className="conversation-items">
-                        {/* Add conversation items here */}
-                        <p>Your conversations will appear here</p>
-                    </div>
+        <div
+            className="bg-image"
+            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_1111.png)` }}
+        >
+            <div className="min-h-screen bg-black/50">
+                <div className="max-w-7xl mx-auto py-3 px-4 sm:py-6 sm:px-6 lg:px-8 flex justify-between items-center">
+                    <button
+                        onClick={() => navigate('/artist')}
+                        className="btn-back">
+                    </button>
                 </div>
-
-                {/* Message View */}
-                <div className="message-view">
-                    <div className="message-header">
-                        <h2>Select a conversation</h2>
-                    </div>
-
-                    <div className="messages-list">
-                        {/* Messages will be displayed here */}
-                    </div>
-
-                    {/* Message Input */}
-                    <div className="message-input">
-                        <input
-                            type="text"
-                            placeholder="Type a message..."
-                            className="message-text-input"
-                        />
-                        <button className="send-button">Send</button>
-                    </div>
-                </div>
+                <main className="flex items-center justify-center h-[calc(100vh-100px)]">
+                </main>
             </div>
         </div>
     );

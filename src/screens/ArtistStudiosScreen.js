@@ -1,23 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function ArtistStudiosScreen() {
+    const navigate = useNavigate();
     return (
-        <div className="artist-studios-screen">
-            <h1>Studios</h1>
-            <div className="studios-container">
-                {/* Studios list section */}
-                <div className="studios-list">
-                    <h2>Available Studios</h2>
-                    {/* Add your studios list here */}
-                    <p>List of studios will be displayed here</p>
+        <div
+            className="bg-image"
+            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/image.png)` }}
+        >
+            <div className="min-h-screen bg-black/50">
+                <div className="max-w-7xl mx-auto py-3 px-4 sm:py-6 sm:px-6 lg:px-8 flex justify-between items-center">
+                    <button
+                        onClick={() => navigate('/artist')}
+                        className="btn-back">
+                    </button>
                 </div>
-
-                {/* Bookings section */}
-                <div className="bookings-section">
-                    <h2>My Bookings</h2>
-                    {/* Add your bookings list here */}
-                    <p>Your studio bookings will appear here</p>
-                </div>
+                <main className="flex items-center justify-center h-[calc(100vh-100px)]">
+                </main>
             </div>
         </div>
     );
